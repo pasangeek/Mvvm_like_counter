@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
             DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         binding.likeVM = viewModel
+        binding.lifecycleOwner  = this
         binding.buttonLike.setOnClickListener {
 
             viewModel.performLike()
@@ -24,10 +25,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         //----observer -----
-        val likeObserver = Observer<Int> {
+       /* val likeObserver = Observer<Int> {
                 newV -> binding.textViewlikecount.text = newV.toString()
         }
-        viewModel.likecount.observe(this, likeObserver)
+        viewModel.likecount.observe(this, likeObserver)*/
 
 }
 }

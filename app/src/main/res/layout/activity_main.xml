@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginTop="96dp"
-        android:text="none"
+        android:text="@{likeVM.likecount.toString()}"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
