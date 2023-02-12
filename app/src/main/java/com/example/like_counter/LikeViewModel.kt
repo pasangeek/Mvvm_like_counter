@@ -18,11 +18,10 @@ class LikeViewModel:ViewModel(){
         _likecount.value  =_likecount.value!!+1
 
 //likecount++
-
-
-
         }
+    fun performDisLike(){
+        _dislikecount.value  =_dislikecount.value!!+1
 
-    }
+    }}
 
 

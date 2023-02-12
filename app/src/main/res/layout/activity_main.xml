@@ -7,7 +7,9 @@
         name="likeVM"
         type="com.example.like_counter.LikeViewModel" />
 
+
 </data>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -59,7 +61,7 @@
         android:layout_width="25dp"
         android:layout_height="21dp"
         android:layout_marginEnd="76dp"
-        android:text="none"
+        android:text="@{likeVM.dislikecount.toString()}"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textViewlikecount"

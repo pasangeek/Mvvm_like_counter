@@ -23,6 +23,12 @@ class MainActivity : AppCompatActivity() {
             //  binding.textViewlikecount.text = viewModel.likecount.toString()
 
         }
+        binding.likeVM = viewModel
+        binding.lifecycleOwner  = this
+        binding.buttondislike.setOnClickListener {
+
+            viewModel.performDisLike()
+        }
 
         //----observer -----
        /* val likeObserver = Observer<Int> {
