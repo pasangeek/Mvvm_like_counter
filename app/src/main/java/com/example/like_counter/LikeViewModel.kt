@@ -1,13 +1,17 @@
 package com.example.like_counter
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class LiveViewModel{
+class LikeViewModel:ViewModel(){
 
-    var livecount:Int = 0
-    fun perform
+    var likecount:Int = 0
+    fun perform_Like_count(){
 
 
-}
+likecount++
+
+        }
+
+    }
+
+
