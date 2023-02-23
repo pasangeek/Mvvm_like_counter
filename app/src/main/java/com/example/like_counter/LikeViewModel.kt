@@ -8,11 +8,12 @@ import androidx.lifecycle.ViewModel
 class LikeViewModel:ViewModel(){
     private val _likecount = MutableLiveData <Int>(0)
     private val _dislikecount = MutableLiveData <Int>(0)
-
+    //private val _savedLikes = MutableLiveData <Int>(0)
     val likecount  : LiveData<Int>
        get() = _likecount
     val dislikecount : LiveData<Int>
         get() = _dislikecount
+
     //var likecount:Int = 0
     fun performLike(){
         _likecount.value  =_likecount.value!!+1
@@ -22,6 +23,12 @@ class LikeViewModel:ViewModel(){
     fun performDisLike(){
         _dislikecount.value  =_dislikecount.value!!+1
 
-    }}
+    }
+fun startFromSaved (Likes: Int) {
+    _likecount.value=Likes
+
+}
+
+}
 
 
